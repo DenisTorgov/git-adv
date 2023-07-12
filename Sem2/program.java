@@ -27,7 +27,17 @@ public class program_2_4 {
         else if ( x == 4) result += divis(0);
         return result;
     }
-        
+
+    private static double sum (int x) {
+        System.out.println("Введите первое число");
+        Scanner iScanner = new Scanner(System.in);
+        double first = Double.parseDouble(iScanner.nextLine());
+        System.out.print("+");
+        double second = Double.parseDouble(iScanner.nextLine());
+        iScanner.close();
+        return first + second;
+    }
+
     public static void main(String[] args)  throws IOException {
         Logger logger = Logger.getLogger(program_2_4.class.getName());
         FileHandler fh = new FileHandler("seminar_2/log_program_4_.txt");
